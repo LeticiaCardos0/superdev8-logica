@@ -43,7 +43,7 @@ function paciente(){
 
     let planoSaude = " ";
     // se possuiPlanoSaude for igual a verdadeiro
-    if (possuiPlanoSaudeplanoSaude === true) {
+    if (possuiPlanoSaude === true) {
         planoSaude = prompt("Digite o nome do plano de Saude");
     }
     const tipoSanguineo = prompt("Digite o tipo Sanguineo");
@@ -67,20 +67,53 @@ function paciente(){
     else if (urgencia === "Dor Extrema"){
         tempoEspera = 30;
     }
-    else {
-        alert("Nivel de Urgencia inexistente")
-        return
-    }
+    else{
+
+    
     alert(
         "Dados do Paciente \n" +
         "\nNome: " + nome +
         "\nIdade: " + idade +
         "\nPeso: " + peso +
-        "\nCPF: " + cpf +
-        "\nPossui pano de saude: " + (possuiPlanoSaude? "Sim" : "Não") + (possuiPlanoSaude ? "Plano de Saude: " + planoSaude + "\n" : "") +
+        "\nCPF: " + cpf + "n" +
+        "\nPossui plano de saude: " + (possuiPlanoSaude? "Sim" : "Não") + (possuiPlanoSaude ? "Plano de Saude: " + planoSaude + "\n" : "") +
         "\nTipo Sanguineo: " + tipoSanguineo +
         "\nAltura: " + altura +
         "\nNivel de Urgencia: " + urgencia + 
-        "Tempo de Espera: " + tempoEspera + "minutos"
+        "Tempo de Espera: " + tempoEspera + " minutos"
+    );
+    }
+}
+
+function exercicio01(){
+    const nome = (prompt("Digite seu nome do personagem:"));
+    const idade = (prompt("Digite a idade do personagem:"));
+    const cidade = (prompt("Digite a Cidade:"));
+    
+    let poder = confirm("O personagem tem Poderes?")
+    if (poder === true) {
+        qualPoder = prompt("Informe o Poder: ")
+    }
+
+    const quantidade = prompt ("Quantas fezes usa o poder mensalmente")
+
+
+    alert (
+        "Nome: " + nome +
+        "\nIdade: " + idade +
+        "\nCidade: " + cidade +
+        "\nPossui poder: " + (poder? "Sim" : "Não") + (poder ? "Plano de Saude: " + qualPoder + "" : "") +
+        "Quantas fezes usa o poder mensalmente: " + quantidade
+    );
+}
+
+function exercicio02(){
+    const base = parseFloat(prompt("Informe a base do quadrado"));
+    const altura = parseFloat(prompt("Informe a altura do quadrado"));
+
+    const area = (base * altura) / 2 
+
+    alert(
+        "A area do quadrado é: " + area 
     );
 }
