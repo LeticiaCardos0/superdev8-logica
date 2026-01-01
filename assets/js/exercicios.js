@@ -248,3 +248,102 @@ function exercicio12() {
         
     }
 }
+
+function exercicio13() {
+    let indice = 0;
+    let somaIdade = 0;
+    let mediaIdade = 0;
+    let status = 0;
+    
+    while (indice < 6){
+        let idade = parseInt(prompt("Informe a idade de 6 pessoas: "));
+        indice = indice + 1;
+
+        if (idade >= 18) {
+            alert("Maior de Idade")
+        } else {
+            alert("Manor de Idade")
+        }
+        
+        somaIdade = somaIdade + idade;
+        mediaIdade = somaIdade / indice;
+    }
+
+    alert ("A media entre as idades informadas é " + mediaIdade.toFixed(0));
+}
+
+function exercicio14() {
+    let indice = 0;
+    let salario = 0;
+    let somaSalario = 0;
+    let mediaSalario = 0;
+    let mediaSalarioText = "";
+    let maiorSalario = 9999;
+    let menorSalario = 0;
+
+    while(indice < 5){
+        indice = indice + 1;
+    
+        let salario = parseInt(prompt("Informe 6 salarios: "))
+
+        somaSalario = somaSalario + salario;
+        mediaSalario = somaSalario / indice;
+        
+        if(menorSalario < salario){
+            menorSalario = salario
+        };
+        
+        if(maiorSalario > salario){
+            maiorSalario = salario
+        };
+        
+        if (mediaSalario > 3000 ){
+        mediaSalarioText = "Salários acima da média";
+        } else {
+        mediaSalarioText = "Salários dentro da média";
+        }
+    }
+    alert ("O menor salario é:R$ " + menorSalario.toFixed(2) +
+           "\nO maior salario é:R$ " + maiorSalario.toFixed(2) + 
+           "\n" + mediaSalarioText + ":R$ " + mediaSalario.toFixed(2));
+}
+
+function exercicio15() {
+    debugger
+    let totalContas = 0;
+    let metRenda = 0;
+    let statusRenda = "";
+    let perctRenda = 0;
+   
+    let contAgua = parseFloat(prompt(`
+Resumo de Gastos:
+        - Digite o valor pago na conta de Água:`));    
+    let contLuz = parseFloat(prompt(`
+Resumo de Gastos:
+        - Digite o valor pago na conta de Luz:`));    
+    let contInternet = parseFloat(prompt(`
+Resumo de Gastos:
+        - Digite o valor pago na conta de Internet:`));    
+    let contAluguel = parseFloat(prompt(`
+Resumo de Gastos:
+        - Digite o valor pago na conta de Aluguel:`));    
+    
+    totalContas = (contAluguel + contInternet) + (contAgua + contLuz);
+
+    let renda = parseFloat(prompt("Informe sua renda mensal: "));
+    
+    metRenda = renda / 2
+
+    if (totalContas > metRenda){
+        statusRenda = "Orçamento comprometido"
+    } else {
+        statusRenda = "Orçamento saudável"
+    }
+
+    perctRenda = (totalContas / renda) * 100
+
+    alert("RESUMO CONTAS" +
+          "\nTotal Contas: R$" + totalContas.toFixed(2) +
+          "\nSuas Contas Representam " + perctRenda.toFixed(0) + "% = " + statusRenda);
+
+}
