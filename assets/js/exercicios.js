@@ -347,3 +347,24 @@ Resumo de Gastos:
           "\nSuas Contas Representam " + perctRenda.toFixed(0) + "% = " + statusRenda);
 
 }
+
+function exercicio16(){
+    let indice = 0;
+    let somaAltura = 0;
+    let mediaAltura = 0;
+    let maiorAltura = 0;
+    
+    while (indice < 5){
+    let altura = parseFloat(prompt("Informe a altura de 5 pessoas: "))   
+
+    indice = indice + 1;
+
+    if (altura > maiorAltura) {
+        maiorAltura = altura
+    }
+   }
+   alert("A maior altura é " + maiorAltura.toFixed(2));
+}
+function exercicio17(){
+    let 
+}
