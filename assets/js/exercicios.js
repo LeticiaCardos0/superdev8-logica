@@ -366,5 +366,83 @@ function exercicio16(){
    alert("A maior altura é " + maiorAltura.toFixed(2));
 }
 function exercicio17(){
-    let 
+    let indice = 0;
+    let maiorPeso = 0;
+    
+    while (indice < 4) {
+        let peso = parseInt(prompt("Informe o peso de 4 pessoas"));
+        indice = indice + 1;
+
+        if (peso > maiorPeso){
+            maiorPeso = peso;
+        }
+    }
+    alert("O maior peso é " + maiorPeso);
+}
+
+function exercicio18(){
+    let indice = 0;
+    let maiorIdade = 0;
+    let nomeMaiorIdade =0;
+    
+    while (indice < 1){
+
+        let nome1 = prompt(`
+Informe o nome e idade de 5 pessoas:
+            - Digite o primeiro nome:`);
+        let idade1 = parseInt(prompt(`
+Informe o idade e idade de 5 pessoas:
+            - Digite o idade da primeira pessoa:`));
+            if (idade1 > maiorIdade){
+                maiorIdade = idade1;
+                nomeMaiorIdade = nome1;
+            }
+
+        let nome2 = prompt(`
+Informe o nome e idade de 5 pessoas:
+            - Digite o segundo nome:`);
+        let idade2 = parseInt(prompt(`
+Informe o idade e idade de 5 pessoas:
+            - Digite o idade da segunda pessoa:`));
+            if (idade2 > maiorIdade){
+                maiorIdade = idade2;
+                nomeMaiorIdade = nome2;
+            }
+
+        let nome3 = prompt(`
+Informe o nome e idade de 5 pessoas:
+            - Digite o terceiro nome:`);
+        let idade3 = parseInt(prompt(`
+Informe o idade e idade de 5 pessoas:
+            - Digite o idade da terceira pessoa:`));
+            if (idade3 > maiorIdade){
+                maiorIdade = idade3;
+                nomeMaiorIdade = nome3;
+            }
+
+        let nome4 = prompt(`
+Informe o nome e idade de 5 pessoas:
+            - Digite o quarto nome:`);
+        let idade4 = parseInt(prompt(`
+Informe o idade e idade de 5 pessoas:
+            - Digite o idade da quarta pessoa:`));
+            if (idade4 > maiorIdade){
+                maiorIdade = idade4;
+                nomeMaiorIdade = nome4;
+            }
+
+        let nome5 = prompt(`
+Informe o nome e idade de 5 pessoas:
+            - Digite o quinto nome:`);
+        let idade5 = parseInt(prompt(`
+Informe o idade e idade de 5 pessoas:
+            - Digite o idade da quinta pessoa:`));
+            if (idade5 > maiorIdade){
+                maiorIdade = idade5;
+                nomeMaiorIdade = nome5;
+            }
+
+        indice = indice + 1;
+    }
+    alert (nomeMaiorIdade + " tem a maior idade = " + maiorIdade + " anos")
 }
