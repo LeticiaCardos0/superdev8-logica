@@ -616,7 +616,56 @@ function exercicio23() {
     );
 
 }
+function exercicio24() {
+
+    let indice = 1;
+    let reprovados = 0;
+    let recuperacao = 0;
+    let aprovados = 0;
+
+    while(indice < 11){
+        let nota = parseInt(prompt(`
+Informe a nota de 10 alunos
+        - Digite a ` + indice + "ª nota"));
+        indice++;
+        
+        if (nota < 5){
+            reprovados++;
+        } else if (nota >= 5 && nota < 7){
+            recuperacao++;
+        } else {
+            aprovados++;
+        }  
+    }
+    alert("Aprovados: " + aprovados +
+          "\nRecuperação: " + recuperacao +
+          "\nReprovados: " + reprovados);
+
+}
+
+function exercicio25() {
+    debugger
+    let indice = 0;
+    let salarioBaixo = 0;
+    let salarioMedio = 0;
+    let salarioAlto = 0;
+
+    while (indice < 7){
+        let salario = parseFloat(prompt("Digite o salario de 7 funcionarios: "))
+        indice++;
+
+        if (salario <= 2000){
+            salarioBaixo++;           
+        } else if (salario > 2001 && salario < 5000){
+            salarioMedio++;           
+        } else {
+            salarioAlto++;           
+        }
+    }
+    alert("Salarios até R$2.000: " + salarioBaixo +
+        "\nSalarios entre R$2.001 e R$5.000: " + salarioMedio +
+        "\nSalarios acima de R$5.000: " + salarioAlto);
+
+}
 
 
-
-''
