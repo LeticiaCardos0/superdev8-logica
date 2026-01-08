@@ -534,7 +534,7 @@ Previsão do tempo para os proximos 7 dias:
 }
 
 function exercicio22() {
-    debugger
+    
     let indice = 0;
     let menorPreco = 9999;
     let nomeMenorPreco = "";
@@ -644,7 +644,7 @@ Informe a nota de 10 alunos
 }
 
 function exercicio25() {
-    debugger
+    
     let indice = 0;
     let salarioBaixo = 0;
     let salarioMedio = 0;
@@ -668,4 +668,180 @@ function exercicio25() {
 
 }
 
+function exercicio26() {
+    let indice = 1;
+    let tempFrio = 0;
+    let tempAgradavel = 0;
+    let tempQuentes = 0;
 
+    while (indice < 7) {
+        let temperatura = parseFloat(prompt(`
+Previsão do tempo para os proximos 7 dias:
+            -Digite a temperatura ` + indice + "º dia"));
+
+        indice = indice + 1;
+
+        if (temperatura < 15) {
+            tempFrio++;
+        }else if (temperatura > 15 && temperatura < 25) {
+            tempAgradavel++;
+        } else {
+            tempQuentes++;
+        }
+    }
+    alert("Quantidade de dias Frios: " + tempFrio +
+          "\nQuantidade de dias Agradáveis: " + tempAgradavel +
+          "\nQuantidade de dias Quentes: " + tempQuentes);
+
+}
+function exercicio27() {
+    let indice = 0;
+    let avRuim = 0;
+    let avRegular = 0;
+    let avBom = 0;
+
+    while (indice < 10){
+        let avaliacao = parseInt(prompt("Qual sua avaliação de 0 a 5 de nosso sistema"));
+
+        indice = indice + 1;
+
+        if (avaliacao  <= 2){
+            avRuim++;
+        } else if (avaliacao === 3){
+            avRegular++;
+        } else {
+            avBom++;
+        }
+    
+    }
+    alert("Quantidade de Avaliações Boas: " + avBom +
+          "\nQuantidade de Avaliações Regular: " + avRegular +
+          "\nQuantidade de Avaliações Ruim: " + avRuim);
+}
+
+function exercicio28() {
+    let indice = 0;
+    let numNegativos = 0;
+    let numZero = 0;
+    let numPositivos = 0;
+
+    while (indice < 8){
+        let numeros = parseInt(prompt("Solicitar 8 numeros inteiros (negativos e pesitivos)"));
+        indice++
+
+        if (numeros < 0){
+            numNegativos++;
+        } else if (numeros === 0){
+            numZero++;
+        } else {
+            numPositivos++;
+        }
+    }
+    alert("Quantidade de Numeros Negativos: " + numNegativos +
+          "\nQuantidade de Numeros Zero: " + numZero +
+          "\nQuantidade de Numeros Positivos: " + numPositivos);
+}
+
+function exercicio29() {
+    let indice = 0;
+    let quantLeve = 0;
+    let quantMedio = 0;
+    let quantPesado = 0;
+
+    while (indice < 5){
+        let peso = parseInt(prompt("Digite o peso de 5 encomendas: "));
+        indice++
+        if(peso <= 2){
+            quantLeve++;
+        } else if (peso > 2 && peso < 10) {
+            quantMedio++;
+        } else {
+            quantPesado++;
+        }
+    }
+    alert("Quantidade de Encomendas Leves: " +  quantLeve +
+          "\nQuantidade de Encomendas Medias: " + quantMedio +
+          "\nQuantidade de Encomendas Pesadas: " + quantPesado);
+}
+
+function exercicio30() {
+    let indice = 0;
+    let quantPelucias = parseInt(prompt("Digite a quantidade de pelúcias da Disney que deseja cadastrar"));
+    let peluMickey = 0;
+    let peluMinnie = 0;
+    let peluDonald = 0;
+
+    while (indice < quantPelucias){
+        let personagem = prompt(`
+Informe qual o personagem:
+    [MICKEY/MINNIE/DONALD]`); 
+    indice++
+
+    if (personagem === "Mickey"){
+        peluMickey++;
+    } else if (personagem === "Minnie"){
+        peluMinnie++;
+    } else if (personagem === "Donald"){
+        peluDonald++
+    } else {
+        alert("Personagem Invalido")
+    }
+    }
+    alert("Quantidade de pelúcias Mickey: " + peluMickey +
+        "\nQuantidade de pelúcias Minnie: " + peluMinnie +
+        "\nQuantidade de pelúcias Donald: " + peluDonald);
+}
+function exercicio31() {
+    let indice = 0;
+    let quantClientes = parseInt(prompt("Digite a quantidade de clientes que irão responder a pesquisa"));
+    let pagCredito = 0;
+    let pagDebito = 0;
+    let pagDinheiro = 0;
+
+    while (indice < quantClientes){
+        let formaPag = prompt(`
+Pesquisa de Formas de Pagamento,qual você mais ultiza?
+        - [CRÉDITO/DÉBITO/DINHEIRO]`); 
+    indice++
+
+        if (formaPag === "crédito"){
+            pagCredito++;
+        } else if (formaPag === "débito"){
+            pagDebito++;
+        } else if (formaPag === "dinheiro"){
+            pagDinheiro++
+        } else {
+            alert("Forma de Pagamento Invalida")
+        }
+    }
+    alert("Quantidade que pagaram no crédito: " + pagCredito +
+          "\nQuantidade que pagaram no débito: " + pagDebito +
+          "\nQuantidade que pagaram dinheiro: " + pagDinheiro);
+}
+
+function exercicio32() {
+    let indice = 0;
+    let quantIngressos = parseInt(prompt("Digite a quantidade de ingressos vendidos"));
+    let inteira = 0;
+    let meia = 0;
+    let cortesia = 0;
+
+    while (indice < quantIngressos){
+
+        let tipoIngresso = prompt("Informe o tipo de ingresso[INTEIRA/MEIA/CORTESIA]: ");
+        indice++
+
+        if (tipoIngresso === "inteira"){
+            inteira++;
+        } else if (tipoIngresso === "meia"){
+            meia++;
+        } else if (tipoIngresso === "cortesia"){
+            cortesia++
+        } else {
+            alert("Forma de Pagamento Invalida")
+        }
+    }
+    alert("Quantidade de ingressos inteiros: " + inteira +
+          "\nQuantidade de ingressos meia: " + meia +
+          "\nQuantidade de ingressos cortesia: " + cortesia);
+}
