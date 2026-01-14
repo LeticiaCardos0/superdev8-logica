@@ -534,7 +534,7 @@ Previsão do tempo para os proximos 7 dias:
 }
 
 function exercicio22() {
-    
+
     let indice = 0;
     let menorPreco = 9999;
     let nomeMenorPreco = "";
@@ -611,8 +611,8 @@ function exercicio23() {
 
     }
     alert("Quantidade de Crianças: " + quantiCrianca +
-        "\nQuantidade de Adolescentes: " + quantiAdolescente + "\nQuantidade de Adultos: " + quantiAdulto + 
-        "\nQuantidade de Idosos: " + quantiIdoso 
+        "\nQuantidade de Adolescentes: " + quantiAdolescente + "\nQuantidade de Adultos: " + quantiAdulto +
+        "\nQuantidade de Idosos: " + quantiIdoso
     );
 
 }
@@ -623,43 +623,43 @@ function exercicio24() {
     let recuperacao = 0;
     let aprovados = 0;
 
-    while(indice < 11){
+    while (indice < 11) {
         let nota = parseInt(prompt(`
 Informe a nota de 10 alunos
         - Digite a ` + indice + "ª nota"));
         indice++;
-        
-        if (nota < 5){
+
+        if (nota < 5) {
             reprovados++;
-        } else if (nota >= 5 && nota < 7){
+        } else if (nota >= 5 && nota < 7) {
             recuperacao++;
         } else {
             aprovados++;
-        }  
+        }
     }
     alert("Aprovados: " + aprovados +
-          "\nRecuperação: " + recuperacao +
-          "\nReprovados: " + reprovados);
+        "\nRecuperação: " + recuperacao +
+        "\nReprovados: " + reprovados);
 
 }
 
 function exercicio25() {
-    
+
     let indice = 0;
     let salarioBaixo = 0;
     let salarioMedio = 0;
     let salarioAlto = 0;
 
-    while (indice < 7){
+    while (indice < 7) {
         let salario = parseFloat(prompt("Digite o salario de 7 funcionarios: "))
         indice++;
 
-        if (salario <= 2000){
-            salarioBaixo++;           
-        } else if (salario > 2001 && salario < 5000){
-            salarioMedio++;           
+        if (salario <= 2000) {
+            salarioBaixo++;
+        } else if (salario > 2001 && salario < 5000) {
+            salarioMedio++;
         } else {
-            salarioAlto++;           
+            salarioAlto++;
         }
     }
     alert("Salarios até R$2.000: " + salarioBaixo +
@@ -683,15 +683,15 @@ Previsão do tempo para os proximos 7 dias:
 
         if (temperatura < 15) {
             tempFrio++;
-        }else if (temperatura > 15 && temperatura < 25) {
+        } else if (temperatura > 15 && temperatura < 25) {
             tempAgradavel++;
         } else {
             tempQuentes++;
         }
     }
     alert("Quantidade de dias Frios: " + tempFrio +
-          "\nQuantidade de dias Agradáveis: " + tempAgradavel +
-          "\nQuantidade de dias Quentes: " + tempQuentes);
+        "\nQuantidade de dias Agradáveis: " + tempAgradavel +
+        "\nQuantidade de dias Quentes: " + tempQuentes);
 
 }
 function exercicio27() {
@@ -700,23 +700,23 @@ function exercicio27() {
     let avRegular = 0;
     let avBom = 0;
 
-    while (indice < 10){
+    while (indice < 10) {
         let avaliacao = parseInt(prompt("Qual sua avaliação de 0 a 5 de nosso sistema"));
 
         indice = indice + 1;
 
-        if (avaliacao  <= 2){
+        if (avaliacao <= 2) {
             avRuim++;
-        } else if (avaliacao === 3){
+        } else if (avaliacao === 3) {
             avRegular++;
         } else {
             avBom++;
         }
-    
+
     }
     alert("Quantidade de Avaliações Boas: " + avBom +
-          "\nQuantidade de Avaliações Regular: " + avRegular +
-          "\nQuantidade de Avaliações Ruim: " + avRuim);
+        "\nQuantidade de Avaliações Regular: " + avRegular +
+        "\nQuantidade de Avaliações Ruim: " + avRuim);
 }
 
 function exercicio28() {
@@ -725,21 +725,21 @@ function exercicio28() {
     let numZero = 0;
     let numPositivos = 0;
 
-    while (indice < 8){
+    while (indice < 8) {
         let numeros = parseInt(prompt("Solicitar 8 numeros inteiros (negativos e pesitivos)"));
         indice++
 
-        if (numeros < 0){
+        if (numeros < 0) {
             numNegativos++;
-        } else if (numeros === 0){
+        } else if (numeros === 0) {
             numZero++;
         } else {
             numPositivos++;
         }
     }
     alert("Quantidade de Numeros Negativos: " + numNegativos +
-          "\nQuantidade de Numeros Zero: " + numZero +
-          "\nQuantidade de Numeros Positivos: " + numPositivos);
+        "\nQuantidade de Numeros Zero: " + numZero +
+        "\nQuantidade de Numeros Positivos: " + numPositivos);
 }
 
 function exercicio29() {
@@ -748,10 +748,10 @@ function exercicio29() {
     let quantMedio = 0;
     let quantPesado = 0;
 
-    while (indice < 5){
+    while (indice < 5) {
         let peso = parseInt(prompt("Digite o peso de 5 encomendas: "));
         indice++
-        if(peso <= 2){
+        if (peso <= 2) {
             quantLeve++;
         } else if (peso > 2 && peso < 10) {
             quantMedio++;
@@ -759,9 +759,9 @@ function exercicio29() {
             quantPesado++;
         }
     }
-    alert("Quantidade de Encomendas Leves: " +  quantLeve +
-          "\nQuantidade de Encomendas Medias: " + quantMedio +
-          "\nQuantidade de Encomendas Pesadas: " + quantPesado);
+    alert("Quantidade de Encomendas Leves: " + quantLeve +
+        "\nQuantidade de Encomendas Medias: " + quantMedio +
+        "\nQuantidade de Encomendas Pesadas: " + quantPesado);
 }
 
 function exercicio30() {
@@ -771,21 +771,21 @@ function exercicio30() {
     let peluMinnie = 0;
     let peluDonald = 0;
 
-    while (indice < quantPelucias){
+    while (indice < quantPelucias) {
         let personagem = prompt(`
 Informe qual o personagem:
-    [MICKEY/MINNIE/DONALD]`); 
-    indice++
+    [MICKEY/MINNIE/DONALD]`);
+        indice++
 
-    if (personagem === "Mickey"){
-        peluMickey++;
-    } else if (personagem === "Minnie"){
-        peluMinnie++;
-    } else if (personagem === "Donald"){
-        peluDonald++
-    } else {
-        alert("Personagem Invalido")
-    }
+        if (personagem === "Mickey") {
+            peluMickey++;
+        } else if (personagem === "Minnie") {
+            peluMinnie++;
+        } else if (personagem === "Donald") {
+            peluDonald++
+        } else {
+            alert("Personagem Invalido")
+        }
     }
     alert("Quantidade de pelúcias Mickey: " + peluMickey +
         "\nQuantidade de pelúcias Minnie: " + peluMinnie +
@@ -798,25 +798,25 @@ function exercicio31() {
     let pagDebito = 0;
     let pagDinheiro = 0;
 
-    while (indice < quantClientes){
+    while (indice < quantClientes) {
         let formaPag = prompt(`
 Pesquisa de Formas de Pagamento,qual você mais ultiza?
-        - [CRÉDITO/DÉBITO/DINHEIRO]`); 
-    indice++
+        - [CRÉDITO/DÉBITO/DINHEIRO]`);
+        indice++
 
-        if (formaPag === "crédito"){
+        if (formaPag === "crédito") {
             pagCredito++;
-        } else if (formaPag === "débito"){
+        } else if (formaPag === "débito") {
             pagDebito++;
-        } else if (formaPag === "dinheiro"){
+        } else if (formaPag === "dinheiro") {
             pagDinheiro++
         } else {
             alert("Forma de Pagamento Invalida")
         }
     }
     alert("Quantidade que pagaram no crédito: " + pagCredito +
-          "\nQuantidade que pagaram no débito: " + pagDebito +
-          "\nQuantidade que pagaram dinheiro: " + pagDinheiro);
+        "\nQuantidade que pagaram no débito: " + pagDebito +
+        "\nQuantidade que pagaram dinheiro: " + pagDinheiro);
 }
 
 function exercicio32() {
@@ -826,22 +826,710 @@ function exercicio32() {
     let meia = 0;
     let cortesia = 0;
 
-    while (indice < quantIngressos){
+    while (indice < quantIngressos) {
 
         let tipoIngresso = prompt("Informe o tipo de ingresso[INTEIRA/MEIA/CORTESIA]: ");
         indice++
 
-        if (tipoIngresso === "inteira"){
+        if (tipoIngresso === "inteira") {
             inteira++;
-        } else if (tipoIngresso === "meia"){
+        } else if (tipoIngresso === "meia") {
             meia++;
-        } else if (tipoIngresso === "cortesia"){
+        } else if (tipoIngresso === "cortesia") {
             cortesia++
         } else {
             alert("Forma de Pagamento Invalida")
         }
     }
     alert("Quantidade de ingressos inteiros: " + inteira +
-          "\nQuantidade de ingressos meia: " + meia +
-          "\nQuantidade de ingressos cortesia: " + cortesia);
+        "\nQuantidade de ingressos meia: " + meia +
+        "\nQuantidade de ingressos cortesia: " + cortesia);
 }
+
+function exercicio33() {
+    let indice = 0;
+    let quantHamburger = 0;
+    let quantPizza = 0;
+    let quantHot = 0;
+    let quantPedidos = parseInt(prompt("Quantos pedidos foram vendidos hoje?"));
+
+    while (indice < quantPedidos) {
+        let tipoPedido = prompt(`
+Qual o tipo des lanche deste pedido?
+        - [HAMBURGUER/PIZZA/HOTDOG]`);
+
+        indice++
+
+        if (tipoPedido === "hamburguer") {
+            quantHamburger++;
+        } else if (tipoPedido === "pizza") {
+            quantPizza++;
+        } else if (tipoPedido === "hotdog") {
+            quantHot++
+        }
+    }
+    alert("Quantidade de hamburguer: " + quantHamburger +
+        "\nQuantidade de pizza: " + quantPizza +
+        "\nQuantidade de hotdog: " + quantHot);
+}
+
+function exercicio34() {
+    let indice = 0;
+    let lvFiccao = 0;
+    let lvEstudo = 0;
+    let lvInfantil = 0;
+
+    let quantLivro = parseInt(prompt("Digite a quantidade livros que você deseja cadastrar"));
+
+    while (indice < quantLivro) {
+        let tipoLivro = prompt(`Digite o tipo de livro que você gostaria de cadastrar
+           - [FICÇÃO/ESTUDO/INFANTIL]`);
+
+        indice++
+        if (tipoLivro === "ficção") {
+            lvFiccao++;
+        } else if (tipoLivro === "estudo") {
+            lvEstudo++;
+        } else if (tipoLivro === "infantil") {
+            lvInfantil++
+        }
+    }
+    alert("Quantidade de livros de Ficção: " + lvFiccao +
+        "\nQuantidade de livros de Estudo: " + lvEstudo +
+        "\nQuantidade de livros de Infantis: " + lvInfantil);
+}
+
+function exercicio35() {
+    let nome = " ";
+    let quantPersonagem = 0;
+    alert("Digite seu personagens de anime favoritos ");
+
+    while (nome != "sair") {
+        nome = prompt("Digite o nome do personagem ou 'sair' para encerrar");
+
+        if (nome != "sair") {
+            quantPersonagem++;
+            alert("Personagem Cadastrado")
+        }
+    }
+    alert("A quantidade de Personagem casdastrados é: " + quantPersonagem);
+
+}
+function exercicio36() {
+    let jogo = " ";
+    let quantRpg = 0;
+    let quantJogos = 0;
+    alert("Lista de Jogos Favoritos");
+
+    while (jogo != "sair") {
+        jogo = prompt("Digite o nome de seus jogos favoritos ou 'sair' para encerrar");
+
+        if (jogo != "sair") {
+            quantJogos++;
+
+            let generoJogo = prompt("Digite o genero desse jogo")
+
+            if (generoJogo === "RPG") {
+                quantRpg++
+            }
+        }
+    }
+    alert("A quantidade de jogos cadastrados é: " + quantJogos +
+        "\nA quantidade de jogos que são do genero RPG: " + quantRpg);
+}
+
+function exercicio37() {
+    let nome = " ";
+    let quantPersonagem = 0;
+    let poderBaixo = 0;
+    let poderMedio = 0;
+    let poderAlto = 0;
+
+    alert("Digite seu personagens da Marvel favoritos ");
+
+    while (nome != "sair") {
+        nome = prompt("Digite o nome do personagem ou 'sair' para encerrar");
+
+        if (nome != "sair") {
+            quantPersonagem++;
+
+            let nivelPoder = prompt(`Digite o nível de poder desse personagem: 
+                    - [BAIXO/MEDIO/ALTO]`);
+
+            if (nivelPoder === "baixo") {
+                poderBaixo++
+            } else if (nivelPoder === "medio") {
+                poderMedio++
+            } else if (nivelPoder === "alto") {
+                poderAlto++
+            }
+        }
+    }
+    alert("A quantidade de Personagem casdastrados é: " + quantPersonagem +
+        "\nQuantidade de personagem de nivel de pode Baixo: " + poderBaixo +
+        "\nQuantidade de personagem de nivel de pode Medio: " + poderMedio +
+        "\nQuantidade de personagem de nivel de pode Alto: " + poderAlto);
+
+
+}
+function exercicio38() {
+    let nome = " ";
+    let quantCad = 0;
+    let media = 0;
+    let somaNota = 0;
+
+    alert("Digite suas séries geeks favoritas ");
+
+    while (nome != "sair") {
+        nome = prompt("Digite o nome da série ou 'sair' para encerrar");
+
+        if (nome != "sair") {
+            quantCad++;
+
+            let nota = parseInt(prompt("De uma nota de 0 a 10 para essa série"));
+
+            somaNota = somaNota + nota;
+            media = somaNota / quantCad
+
+        }
+    }
+    alert("A quantidade de series cadastradas é: " + quantCad +
+        "\nA média da notas é: " + media.toFixed(2));
+
+}
+function exercicio39() {
+    debugger
+    let nome = " ";
+    let quantCad = 0;
+    let quantNao = 0;
+
+    alert("Digite nome de consoles/jogos retrô (ex: SNES, Mega Drive)");
+
+    while (nome != "sair") {
+        nome = prompt("Digite o nome de consoles/jogos retrô (ex: SNES, Mega Drive) ou 'sair' para encerrar");
+
+        if (nome != "sair") {
+            quantCad++;
+
+            let jogou = prompt("Você ja jogou? [SIM/NÃO] ");
+
+            if (jogou === "não") {
+                quantNao++
+            }
+        }
+    }
+    alert("A quantidade cadastradas é: " + quantCad +
+        "\nQuantos o usuario não jogou: " + quantNao);
+}
+
+function exercicio40() {
+    let distancia = parseInt(prompt("Digite a distância percorrida em km"));
+    let combustivel = parseInt(prompt("Digite o consumo de combustível em litros"));
+
+    let menu = undefined;
+
+    while (menu != 10) {
+        menu = parseInt(prompt(`
+MENU:
+
+    1 - Calcular consumo médio (km/l)
+    2 - Calcular custo da viagem
+    3 - Alterar distância percorrida
+    4 - Alterar consumo em litros    
+    10 - Sair`));
+
+        if (menu === 1) {
+            let consumoMedio = distancia / combustivel;
+            alert("O consumo médio é " + consumoMedio);
+
+        } else if (menu === 2) {
+            let precoLitro = parseFloat(prompt("Digite o valor do litro do combustivel"));
+            let custoViagem = combustivel * precoLitro;
+            alert("O custo da viagem foi " + custoViagem);
+
+        } else if (menu === 3) {
+            distancia = parseInt(prompt("Digite a distância percorrida em km"));
+
+        } else if (menu === 4) {
+            combustivel = parseInt(prompt("Digite o consumo de combustível em litros"));
+        }
+    }
+}
+
+function exercicio41() {
+    let saldo = parseInt(prompt("Digite o saldo na conta"));
+    let menu = undefined;
+
+    while (menu != 10) {
+        menu = parseInt(prompt(`
+MENU:
+
+    1 - Depositar
+    2 - Sacar
+    3 - Consultar saldo
+    10 - Sair`));
+
+        if (menu === 1) {
+            let deposito = parseFloat(prompt("Digite o valor que gostaria depositar"));
+            saldo = saldo + deposito;
+            alert("O saldo atualizado é R$ " + saldo.toFixed);
+
+        } else if (menu === 2) {
+            let saque = parseFloat(prompt("Digite o valor que gostaria sacar"));
+            saldo = saldo - saque;
+            alert("O saldo atualizado é R$ " + saldo.toFixed);
+
+        } else if (menu === 3) {
+            alert("O saldo atualizado é R$ " + saldo.toFixed);
+        }
+
+    }
+}
+function exercicio42() {
+    let menu = undefined;
+
+    while (menu != 10) {
+
+        menu = parseInt(prompt(`
+MENU de conversão de temperaturas:
+1 - Celsius para Fahrenheit
+2 - Fahrenheit para Celsius
+10 - Sair
+        `));
+
+        if (menu === 1) {
+            let tempCelsius = parseFloat(prompt("Digite a temperatura em Celsius"));
+            let temp = (tempCelsius * 9 / 5) + 32;
+            alert("A temperatura em Celsius = " + tempCelsius + "°C para Fahrenheit é " + temp.toFixed(2) + "°F");
+
+        } else if (menu === 2) {
+            let tempFahr = parseFloat(prompt("Digite a temperatura em Fahrenheit"));
+            let temp = (tempFahr - 32) * 5 / 9;
+            alert("A temperatura em Fahrenheit = " + tempFahr + "°F para Celsius é " + temp.toFixed(2) + "°C");
+
+        } else if (menu === 10) {
+            alert("Saindo do programa...");
+
+        } else {
+            alert("Opção inválida!");
+        }
+    }
+}
+
+function exercicio43() {
+    let menu = undefined;
+
+    while (menu != 10) {
+
+        menu = parseInt(prompt(`
+MENU de calculo do IMC:
+1 - Calcular IMC
+2 - Ver instruções de uso
+10 - Sair
+        `));
+
+        if (menu === 1) {
+            let peso = parseFloat(prompt("Digite seu peso: "))
+            let altura = parseFloat(prompt("Digite sua altura: "))
+            let imc = peso / (altura * altura);
+
+            let classificacao = "";
+
+            if (imc < 18.5) {
+                classificacao = "Abaixo do peso ideal";
+            } else if (imc < 25) {
+                classificacao = "Peso normal (Eutrofia)";
+            } else if (imc < 30) {
+                classificacao = "Sobrepeso";
+            } else {
+                classificacao = "Obesidade";
+            }
+
+            alert("Seu IMC é: " + imc.toFixed(2) +
+                "\nClassificação: " + classificacao
+            );
+
+        } else if (menu === 2) {
+            alert("O IMC (Índice de Massa Corporal) é uma métrica internacional 		adotada pela Organização Mundial da Saúde (OMS) para avaliar se uma 		pessoa 	está em um peso saudável em relação à sua altura." +
+                "\nClassificação para Adultos" +
+                "\n-  Abaixo de 18,5: Abaixo do peso ideal." +
+                "\n-  18,5 a 24,9: Peso normal (Eutrofia)." +
+                "\n-  25,0 a 29,9: Sobrepeso." +
+                "\n-  30,0 ou mais: Obesidade (dividida em graus I, II e III).");
+
+        } else if (menu === 10) {
+            alert("Saindo do programa...");
+
+        } else {
+            alert("Opção inválida!");
+        }
+    }
+}
+
+function exercicio44() {
+    let menu = undefined;
+    let estoque = 0;
+
+    while (menu != 10) {
+
+        menu = parseInt(prompt(`
+MENU de controle de estoque:
+1 - Adicionar item ao estoque
+2 - Remover item do estoque
+3 - Consultar quantidade em estoque
+10 - Sair
+        `));
+
+        if (menu === 1) {
+            let addEstoque = parseInt(prompt("Digite quantos produtos quer adicionar no 	estoque"));
+            estoque = estoque + addEstoque
+
+        } else if (menu === 2) {
+            let removeEstoque = parseInt(prompt("Digite quantos produtos quer remover do 	estoque"));
+
+            if (removeEstoque > estoque) {
+                alert("Esse valor é maior que a quantidade em estoque");
+
+            } else {
+                estoque = estoque - removeEstoque
+            }
+
+        } else if (menu === 3) {
+            alert("O estoque atual é " + estoque);
+
+        } else if (menu === 10) {
+            alert("Saindo do programa...");
+
+        } else {
+            alert("Opção inválida!");
+        }
+
+    }
+}
+
+function exercicio45() {
+
+    let menu = undefined;
+    let totalPedido = 0;
+    let quantHamburguer = 0;
+    let quantPizza = 0;
+    let quantRefri = 0;
+    const refri = 8;
+    const pizza = 25;
+    const hamburguer = 15;
+
+    while (menu != 10) {
+        menu = parseInt(prompt(`
+MENU de lanche:
+1 - Adicionar Hambúrguer (R$ 15,00)
+2 - Adicionar Pizza (R$ 25,00)
+3 - Adicionar Refrigerante (R$ 8,00)
+4 - Ver total parcial
+10 - Finalizar pedido 
+        `));
+
+        if (menu === 1) {
+            alert("Um hamburguer foi adicionado ao seu pedido");
+            totalPedido = totalPedido + hamburguer;
+            quantHamburguer++;
+
+        } else if (menu === 2) {
+            alert("Uma pizza foi adicionada ao seu pedido");
+            totalPedido = totalPedido + pizza;
+            quantPizza++;
+
+        } else if (menu === 3) {
+            alert("Um refrigerante foi adicionado ao seu pedido");
+            totalPedido = totalPedido + refri;
+            quantRefri++
+
+        } else if (menu === 4) {
+            alert("Resumo Pedido" +
+                "\n    - Quantidade de Hamburguer: " + quantHamburguer +
+                "\n    - Quantidade de Pizza: " + quantPizza +
+                "\n    - Quantidade de Refrigerente: " + quantRefri +
+                "\n    - VALOR TOTAL:R$ " + totalPedido.toFixed(2));
+
+        } else if (menu === 10) {
+            alert("PEDIDO FINALIZADO" +
+                "\n    - Quantidade de Hamburguer: " + quantHamburguer +
+                "\n    - Quantidade de Pizza: " + quantPizza +
+                "\n    - Quantidade de Refrigerente: " + quantRefri +
+                "\n    - VALOR TOTAL:R$ " + totalPedido.toFixed(2));
+
+        } else {
+            alert("Opção inválida!");
+        }
+    }
+}
+
+function exercicio46() {
+
+    let menu = undefined;
+    let media = 0;
+    let somaNota = 0;
+    let quantNota = 0;
+
+    while (menu != 10) {
+        menu = parseInt(prompt(`
+MENU de notas de alunos:
+1 - Cadastrar nota
+2 - Ver média das notas
+3 - Ver quantidade de notas cadastradas
+10 - Sair 
+        `));
+
+        if (menu === 1) {
+            let nota = parseFloat(prompt("Digite a nota que deseja cadastrar:"));
+            somaNota = somaNota + nota;
+            quantNota++;
+
+        } else if (menu === 2) {
+
+            if (quantNota === 0) {
+                alert("Nenhuma nota cadastrada ainda!");
+            } else {
+                media = somaNota / quantNota;
+                alert("A média das notas cadastradas é " + media.toFixed(2));
+            }
+
+        } else if (menu === 3) {
+            alert("A quantidade de notas cadastradas é " + quantNota);
+
+        } else if (menu === 10) {
+            alert("Saindo do programa...");
+
+        } else {
+            alert("Opção inválida!");
+        }
+    }
+}
+
+function exercicio47() {
+
+    let menu = undefined;
+    let quantBom = 0;
+    let quantRegular = 0;
+    let quantRuim = 0;
+    let totalPesquisa = 0;
+
+    while (menu != 10) {
+        menu = parseInt(prompt(`
+MENU pesquisa de satisfação:
+1 - Registrar resposta "Bom"
+2 - Registrar resposta "Regular"
+3 - Registrar resposta "Ruim"
+4 - Ver resumo da pesquisa
+10 - Encerrar pesquisa 
+        `));
+
+        if (menu === 1) {
+            quantBom++;
+
+        } else if (menu === 2) {
+            quantRegular++;
+
+        } else if (menu === 3) {
+            quantRuim++;
+
+        } else if (menu === 4) {
+            totalPesquisa = quantBom + quantRegular + quantRuim;
+            alert("Resumo Pesquisa" +
+                "\n    - Quantidade de Bom: " + quantBom +
+                "\n    - Quantidade de Regular: " + quantRegular +
+                "\n    - Quantidade de Ruim: " + quantRuim +
+                "\n    - QUANTIDADE TOTAL DE RESPOSTAS: " + totalPesquisa);
+
+        } else if (menu === 10) {
+            alert("Saindo do programa...");
+
+        } else {
+            alert("Opção inválida!");
+        }
+    }
+}
+
+function exercicio48() {
+
+    let indice = 0;
+    let quantPedido = parseInt(prompt("Quantos pedidos você deseja cadastrar?"));
+    let maiorCompra = 0;
+    let menorCompra = Infinity;
+    let totalCompras = 0;
+    let mediaCompras = 0;
+    let quantCredito = 0;
+    let quantDebito = 0;
+    let quantPix = 0;
+
+    while (indice < quantPedido) {
+
+        let nomeCliente = prompt("Digite o nome do cliente");
+        let valorCompra = parseFloat(prompt("Digite o valor da compra"));
+
+        totalCompras += valorCompra;
+
+        if (valorCompra < menorCompra) {
+            menorCompra = valorCompra;
+        }
+
+        if (valorCompra > maiorCompra) {
+            maiorCompra = valorCompra;
+        }
+
+        let formPagamento = prompt("Forma de pagamento [CRÉDITO/DÉBITO/PIX]").toLowerCase();
+
+        if (formPagamento === "crédito" || formPagamento === "credito") {
+            quantCredito++;
+        } else if (formPagamento === "débito" || formPagamento === "debito") {
+            quantDebito++;
+        } else if (formPagamento === "pix") {
+            quantPix++;
+        }
+
+        indice++;
+    }
+
+    mediaCompras = totalCompras / quantPedido;
+
+    alert(
+        "Resumo Vendas" +
+        "\n- Maior valor de compra: R$ " + maiorCompra.toFixed(2) +
+        "\n- Menor valor de compra: R$ " + menorCompra.toFixed(2) +
+        "\n- Média de compra: R$ " + mediaCompras.toFixed(2) +
+        "\n- Quantidade de pagamentos no CRÉDITO: " + quantCredito +
+        "\n- Quantidade de pagamentos no DÉBITO: " + quantDebito +
+        "\n- Quantidade de pagamentos no PIX: " + quantPix
+    );
+}
+
+
+function exercicios49() {
+
+    let indice = 0;
+    let quantAlunos = parseInt(prompt("Quantos alunos você deseja cadastrar?"));
+    
+    let somaIdade = 0;
+    let pesoBaixo = 0;
+    let pesoNormal = 0;
+    let pesoAcima = 0;
+    
+    let menorImc = 999;
+    let maiorImc = 0;
+    let nomeMenor = "";
+    let nomeMaior = "";
+
+    while (indice < quantAlunos) {
+
+        let nome = prompt("Digite o nome do aluno:");
+        let idade = parseInt(prompt("Digite a idade do aluno"));
+        somaIdade = somaIdade + idade;
+
+        let peso = parseFloat(prompt("Digite seu peso: "));
+        let altura = parseFloat(prompt("Digite sua altura: "));
+
+        let imc = peso / (altura * altura);
+
+        if (imc < menorImc) {
+            menorImc = imc;
+            nomeMenor = nome;
+        }
+
+        if (imc > maiorImc) {
+            maiorImc = imc;
+            nomeMaior = nome;
+        }
+
+        if (imc < 18.5) {
+            pesoBaixo++;
+        } else if (imc < 25) {
+            pesoNormal++;
+        } else {
+            pesoAcima++;
+        }
+
+        indice++;
+    }
+
+    let mediaIdade = somaIdade / quantAlunos;
+
+    alert(
+        "O aluno com maior IMC é " + nomeMaior + " com IMC de " + maiorImc.toFixed(2) +
+        "\nO aluno com menor IMC é " + nomeMenor + " com IMC de " + menorImc.toFixed(2) +
+        "\n\nResumo IMC - Alunos" +
+        "\n- Abaixo do peso: " + pesoBaixo +
+        "\n- Peso normal: " + pesoNormal +
+        "\n- Sobrepeso: " + pesoAcima +
+        "\n\nA média de idade dos alunos é: " + mediaIdade.toFixed(1) +
+        " de " + quantAlunos + " alunos cadastrados"
+    );
+}
+function exercicios50() {
+
+    let indice = 0;
+    let quantMaratona = parseInt(prompt("Quantos títulos deseja em uma maratona geek?"));
+
+    let somaNota = 0;
+    let mediaNota = 0;
+    let maiorNota = 0;
+    let nomeMaiorNota = "";
+    let menorNota = 999;
+    let nomeMenorNota = "";
+    let quantFilme = 0;
+    let quantAnime = 0;
+    let quantSerie = 0;
+    
+    while (indice < quantMaratona){
+
+ 	let nome = prompt("Digite o nome do titulo:");
+ 	let tipo = prompt("Tipo [FILME/SÉRIE/ANIME]:");
+	     
+	    if (tipo === "filme"){
+		quantFilme++
+   	    } else if (tipo === "série" || tipo === "serie"){
+		quantSerie++
+   	    } else if (tipo === "anime"){
+		quantAnime++
+   	    }
+
+        let nota = parseInt(prompt("Digite a nota [0 a 10] "));
+
+        somaNota = somaNota + nota;
+ 
+	if (nota > maiorNota) {
+            maiorNota = nota;
+            nomeMaiorNota = nome;
+        }
+
+        if (nota < menorNota) {
+            menorNota = nota;
+            nomeMenorNota = nome;
+        }
+
+    indice++
+
+    }
+    
+    mediaNota = somaNota / quantMaratona;
+
+    alert(
+        "A maior nota é " + maiorNota + " de " + nomeMaiorNota +
+        "\nA menor nota é " + menorNota + " de " + nomeMenorNota +
+        "\nA média de notas dos titulos é: " + mediaNota.toFixed(1) +
+        "\n\nResumo Notas - Maratona " +
+        "\n- Quantidade De Filmes: " + quantFilme +
+     	"\n- Quantidade De Animes: " + quantAnime +
+        "\n- Quantidade De Séries: " + quantSerie +
+        "\n- QUANTIDADE TOTAL DA MARATONA: " + quantMaratona
+    );
+    
+}
+    
+
+
+
+
+
+
+
+
+
