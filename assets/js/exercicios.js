@@ -274,7 +274,6 @@ function exercicio13() {
 
 function exercicio14() {
     let indice = 0;
-    let salario = 0;
     let somaSalario = 0;
     let mediaSalario = 0;
     let mediaSalarioText = "";
@@ -287,7 +286,6 @@ function exercicio14() {
         let salario = parseInt(prompt("Informe 6 salarios: "))
 
         somaSalario = somaSalario + salario;
-        mediaSalario = somaSalario / indice;
 
         if (menorSalario < salario) {
             menorSalario = salario
@@ -297,12 +295,15 @@ function exercicio14() {
             maiorSalario = salario
         };
 
-        if (mediaSalario > 3000) {
-            mediaSalarioText = "Salários acima da média";
-        } else {
-            mediaSalarioText = "Salários dentro da média";
-        }
     }
+    mediaSalario = somaSalario / indice;
+
+    if (mediaSalario > 3000) {
+        mediaSalarioText = "Salários acima da média";
+    } else {
+        mediaSalarioText = "Salários dentro da média";
+    }
+
     alert("O menor salario é:R$ " + menorSalario.toFixed(2) +
         "\nO maior salario é:R$ " + maiorSalario.toFixed(2) +
         "\n" + mediaSalarioText + ":R$ " + mediaSalario.toFixed(2));
@@ -350,8 +351,6 @@ Resumo de Gastos:
 
 function exercicio16() {
     let indice = 0;
-    let somaAltura = 0;
-    let mediaAltura = 0;
     let maiorAltura = 0;
 
     while (indice < 5) {
@@ -1150,7 +1149,7 @@ MENU de calculo do IMC:
             );
 
         } else if (menu === 2) {
-            alert("O IMC (Índice de Massa Corporal) é uma métrica internacional 		adotada pela Organização Mundial da Saúde (OMS) para avaliar se uma 		pessoa 	está em um peso saudável em relação à sua altura." +
+            alert("O IMC (Índice de Massa Corporal) é uma métrica internacional adotada pela Organização Mundial da Saúde (OMS) para avaliar se uma 		pessoa 	está em um peso saudável em relação à sua altura." +
                 "\nClassificação para Adultos" +
                 "\n-  Abaixo de 18,5: Abaixo do peso ideal." +
                 "\n-  18,5 a 24,9: Peso normal (Eutrofia)." +
@@ -1181,11 +1180,11 @@ MENU de controle de estoque:
         `));
 
         if (menu === 1) {
-            let addEstoque = parseInt(prompt("Digite quantos produtos quer adicionar no 	estoque"));
+            let addEstoque = parseInt(prompt("Digite quantos produtos quer adicionar no estoque"));
             estoque = estoque + addEstoque
 
         } else if (menu === 2) {
-            let removeEstoque = parseInt(prompt("Digite quantos produtos quer remover do 	estoque"));
+            let removeEstoque = parseInt(prompt("Digite quantos produtos quer remover do estoque"));
 
             if (removeEstoque > estoque) {
                 alert("Esse valor é maior que a quantidade em estoque");
@@ -1407,12 +1406,12 @@ function exercicios49() {
 
     let indice = 0;
     let quantAlunos = parseInt(prompt("Quantos alunos você deseja cadastrar?"));
-    
+
     let somaIdade = 0;
     let pesoBaixo = 0;
     let pesoNormal = 0;
     let pesoAcima = 0;
-    
+
     let menorImc = 999;
     let maiorImc = 0;
     let nomeMenor = "";
@@ -1439,9 +1438,9 @@ function exercicios49() {
             nomeMaior = nome;
         }
 
-        if (imc < 18.5) {
+        if (imc < 18.59) {
             pesoBaixo++;
-        } else if (imc < 25) {
+        } else if (imc >= 18.59 && imc <= 24.99) {
             pesoNormal++;
         } else {
             pesoAcima++;
@@ -1477,25 +1476,25 @@ function exercicios50() {
     let quantFilme = 0;
     let quantAnime = 0;
     let quantSerie = 0;
-    
-    while (indice < quantMaratona){
 
- 	let nome = prompt("Digite o nome do titulo:");
- 	let tipo = prompt("Tipo [FILME/SÉRIE/ANIME]:");
-	     
-	    if (tipo === "filme"){
-		quantFilme++
-   	    } else if (tipo === "série" || tipo === "serie"){
-		quantSerie++
-   	    } else if (tipo === "anime"){
-		quantAnime++
-   	    }
+    while (indice < quantMaratona) {
+
+        let nome = prompt("Digite o nome do titulo:");
+        let tipo = prompt("Tipo [FILME/SÉRIE/ANIME]:");
+
+        if (tipo === "filme") {
+            quantFilme++
+        } else if (tipo === "série" || tipo === "serie") {
+            quantSerie++
+        } else if (tipo === "anime") {
+            quantAnime++
+        }
 
         let nota = parseInt(prompt("Digite a nota [0 a 10] "));
 
         somaNota = somaNota + nota;
- 
-	if (nota > maiorNota) {
+
+        if (nota > maiorNota) {
             maiorNota = nota;
             nomeMaiorNota = nome;
         }
@@ -1505,10 +1504,10 @@ function exercicios50() {
             nomeMenorNota = nome;
         }
 
-    indice++
+        indice++
 
     }
-    
+
     mediaNota = somaNota / quantMaratona;
 
     alert(
@@ -1517,16 +1516,53 @@ function exercicios50() {
         "\nA média de notas dos titulos é: " + mediaNota.toFixed(1) +
         "\n\nResumo Notas - Maratona " +
         "\n- Quantidade De Filmes: " + quantFilme +
-     	"\n- Quantidade De Animes: " + quantAnime +
+        "\n- Quantidade De Animes: " + quantAnime +
         "\n- Quantidade De Séries: " + quantSerie +
         "\n- QUANTIDADE TOTAL DA MARATONA: " + quantMaratona
     );
-    
+
 }
-    
 
 
 
+function exercicio52() {
+    let indice = 0;
+    let quantidade = parseInt(prompt("Informe a quantidade de abastecimentos:"));
+
+    let totalAlcool = 0;
+    let totalGasolina = 0;
+    let maiorCusto = 0;
+    let menorCusto = 999999;
+
+    while (indice < quantidade) {
+        let tipo = prompt("Tipo de combustível (ALCOOL ou GASOLINA):").toUpperCase();
+        let litros = parseFloat(prompt("Quantidade de litros:"));
+        let preco = parseFloat(prompt("Preço por litro:"));
+
+        let custo = litros * preco;
+
+        indice = indice + 1;
+
+        if (tipo === "ALCOOL") {
+            totalAlcool = totalAlcool + litros;
+        } else if (tipo === "GASOLINA") {
+            totalGasolina = totalGasolina + litros;
+        }
+
+        if (custo < menorCusto) {
+            menorCusto = custo;
+        } else if (custo > maiorCusto) {
+                maiorCusto = custo;
+        }
+    }
+
+    alert(
+        "Total de litros com ÁLCOOL: " + totalAlcool +
+        "\nTotal de litros com GASOLINA: " + totalGasolina +
+        "\nMaior custo de abastecimento: R$ " + maiorCusto.toFixed(2) +
+        "\nMenor custo de abastecimento: R$ " + menorCusto.toFixed(2)
+    );
+}
 
 
 
