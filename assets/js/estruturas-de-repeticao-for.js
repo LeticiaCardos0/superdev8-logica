@@ -25,16 +25,38 @@ function relogio(){
     }
 }
 
-function solicitarDadosPaciente(){
+function solicitarDadosPaciente() {
     let quantidadePacientes = parseInt(prompt("Digite a quantidade"));
 
+    for (let indice = 0; indice < quantidadePacientes; indice = indice + 1) {
+        let nome = prompt("Digite o nome do paciente");
+        let idade = parseInt(prompt("Digite a idade do paciente"));
+        let peso = parseFloat(prompt("Digite o peso do paciente"));
+        let altura = parseFloat(prompt("Digite a altura do paciente"));
+    }
+}
     for(let indice = 0; indice < quantidadePacientes ; indice = indice + 1) {
         let nome = prompt("Digite o nome do paciente");
         let 
     }
+
+
+function exemploContagemRegressiva() {
+    // declarar variável; condição; decrementar
+    for (let indice = 10; indice >= 0; indice = indice - 1) {
+        alert(indice);
+    }
+    alert('feliz ano novo!')
 }
 
-function contagemregreciva(){
-    
-}
+function apresentarNumerosParesAte1000(){
+    for(let i = 0; i <= 1000; i = i + 1){
+        if (i % 2 == 0){
+            alert(i);
+        }
+    }
 
+    for(let i = 0; i <= 1000; i = i + 1){
+        alert(i);
+    }
+}
