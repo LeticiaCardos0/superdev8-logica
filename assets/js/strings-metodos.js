@@ -202,6 +202,7 @@ function padEnd() {
     // Para usar o padEnd precisamos converter todos os int ou float para string, usamos o .toString()
     let linha = nome.padEnd(30, " ") + idade.toString().padEnd(3, " ") + salario.toString().padEnd(10, " ");
 
+    alert(`Linha do CSV: '${linha}'`)
 
 
 }

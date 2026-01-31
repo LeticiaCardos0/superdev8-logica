@@ -114,3 +114,44 @@ function calculadoraFolhasPagamento() {
         );
     }
 }
+
+function jogoPalavras(){
+    let palavras = ["Roblox", "Free Fire", "GTA"];
+    let nomeJogador = prompt("Digite seu nome");
+    let quantidadeTentativas = 10;
+    
+    if (nomeJogador.toLocaleLowerCase().includes("leticia")){
+        quantidadeTentativas = 3;
+    }
+
+    while(quantidadeTentativas >= 0){
+        let nomeJogo = prompt("Tente adivinhar o nome de 3 jogos");
+        // Verificando se o nome que o usuario digitou esta dentro da lista
+        if (palavras.includes(nomeJogo)){
+            // Dar mais 3 tentativas a cada acerto
+            quantidadeTentativas += 3;
+            // Como descobrir a posição
+            let indiceJogo = palavras.indexOf(nomeJogo);
+            // Remover da lista o jogo que acertou
+            palavras.splice(indiceJogo, 1);
+            console.log(palavras);
+            alert(`Acertou ${nomeJogo}`);
+
+            if(palavras.length === 0){
+                alert("Ganhou o jogo");
+                break // serve para parar o while
+            }
+        }
+        else {
+        // Decrementar em 1
+        quantidadeTentativas -= 1;
+        alert(`Errou\nVocê tem ${quantidadeTentativas} tentativas restantes `);
+        }
+
+        console.log(`Quantidade de tentativas: ${quantidadeTentativas} \nPalavras ${palavras}`);
+        if(quantidadeTentativas <= 0){
+            alert("Perdeu o jogo")
+            break
+        }
+    }
+}
