@@ -1,3 +1,4 @@
+
 function exemplo() {
     let indice = 0;
 
@@ -138,17 +139,4 @@ INFORME 10 NUMEROS:
 A quantidade de numeros impares é: ${impar}`);
 }
 
-function teste07() {
-    let quantPrimos = 0;
 
-    for (let indice = 1; indice <= 10; indice++) {
-        let numero = parseInt(prompt(`  
-INFORME 10 NUMEROS:
-            Digite o ` + indice + ` º numero`));
-
-            if (numero % indice === 0){
-                quantPrimos++
-            }
-    }
-    alert(`A quantidade de numeros primos é: ${quantPrimos}`);
-}
