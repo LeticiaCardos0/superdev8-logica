@@ -41,7 +41,6 @@ function exemploVariaveisBoolean(){
 
 }
 
-
 function exemploVariaveis(){
     const destino = "Maceió";
     const quantidadeDias = "20"
